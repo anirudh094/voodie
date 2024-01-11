@@ -2,75 +2,7 @@ let food = [];
 let totalAmount = 0;
 
 $(document).ready(function () {
-  // if ($(document).width() <= 992) {
-  //   $(".navbar-nav").removeClass("ml-auto");
-  //   $(".navbar-nav").addClass("mr-auto");
-  // } else {
-  //   $(".navbar-nav").removeClass("mr-auto");
-  //   $(".navbar-nav").addClass("ml-auto");
-  // }
-
-  var scrollToTopBtn = $("#scrollToTop");
-
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      scrollToTopBtn.addClass("show");
-    } else {
-      scrollToTopBtn.removeClass("show");
-    }
-  });
-
-  scrollToTopBtn.on("click", function (event) {
-    event.preventDefault();
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      "500"
-    );
-  });
-
-  // $(".navbar a").on("click", function (event) {
-  //   // Make sure this.hash has a value before overriding default behavior
-  //   if (this.hash !== "") {
-  //     // console.log(this);
-  //     // console.log(this.hash);
-  //     // Prevent default anchor click behavior
-  //     event.preventDefault();
-  //     // Store hash
-  //     var hash = this.hash;
-  //     // Using jQuery's animate() method to add smooth page scroll
-  //     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  //     $("html, body").animate(
-  //       {
-  //         scrollTop: $(hash).offset().top,
-  //       },
-  //       800,
-  //       function () {
-  //         // Add hash (#) to URL when done scrolling (default click behavior)
-  //         window.location.hash = hash;
-  //       }
-  //     );
-  //   } // End if
-  // });
-
-  // $(".homeBtn").click(function (event) {
-  //   if (this.hash !== "") {
-  //     event.preventDefault();
-  //     let hash = this.hash;
-
-  //     $("html, body").animate(
-  //       {
-  //         scrollTop: $(hash).offset().top,
-  //       },
-  //       800,
-  //       function () {
-  //         // Add hash (#) to URL when done scrolling (default click behavior)
-  //         window.location.hash = hash;
-  //       }
-  //     );
-  //   }
-  // });
+  
 
   $(".product-box-layout4").click(function () {
     $(this)
@@ -84,7 +16,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#burger").offset().top,
+          //scrollTop: $("#burger").offset().top,
         },
         800,
         function () {}
@@ -94,7 +26,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#chinese").offset().top,
+          //scrollTop: $("#chinese").offset().top,
         },
         800,
         function () {}
@@ -104,7 +36,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#beverages").offset().top,
+          //scrollTop: $("#beverages").offset().top,
         },
         800,
         function () {}
@@ -115,7 +47,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#sandwich").offset().top,
+          //scrollTop: $("#sandwich").offset().top,
         },
         800,
         function () {}
@@ -125,7 +57,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#fries").offset().top,
+          //scrollTop: $("#fries").offset().top,
         },
         800,
         function () {}
@@ -135,7 +67,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#momos").offset().top,
+          //scrollTop: $("#momos").offset().top,
         },
         800,
         function () {}
@@ -145,7 +77,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#maggie").offset().top,
+          //scrollTop: $("#maggie").offset().top,
         },
         800,
         function () {}
@@ -155,7 +87,7 @@ $(document).ready(function () {
 
       $("html, body").animate(
         {
-          scrollTop: $("#pasta").offset().top,
+          //scrollTop: $("#pasta").offset().top,
         },
         800,
         function () {}
@@ -290,7 +222,7 @@ function openWhatsapp() {
     let total = 0;
     let address = $("#address")[0].value;
     let note = $("#note")[0].value;
-    let wTxt = "*name*               *quantity* \n";
+    let wTxt = "*Name*               *Quantity* \n";
 
     for (var i = 0; i < food.length; i++) {
       let name = food[i][0];
@@ -315,6 +247,6 @@ function openWhatsapp() {
     }
 
     let wTxtEncoded = encodeURI(wTxt);
-    window.open("https://wa.me/916283930610?text=" + wTxtEncoded);
+    window.open("https://wa.me/919855454408?text=" + wTxtEncoded);
   }
 }
